@@ -1,0 +1,96 @@
+import { Building2, MapPin, FileText, ArrowRight } from "lucide-react";
+import { Button } from "./ui/button";
+
+const countries = [
+  {
+    name: "Argentina",
+    flag: "🇦🇷",
+    description: "Políticas laborales según LCT. Vacaciones de 14 a 35 días según antigüedad.",
+    features: ["SAC en dos cuotas", "Obra social + ART", "Teletrabajo disponible"],
+  },
+  {
+    name: "México",
+    flag: "🇲🇽",
+    description: "Políticas según Ley Federal del Trabajo. Mínimo 12 días de vacaciones.",
+    features: ["Aguinaldo conforme LFT", "IMSS + seguro médico", "Vales de despensa"],
+  },
+];
+
+export const PoliciesSection = () => {
+  return (
+    <section id="politicas" className="py-20 md:py-32 relative">
+      <div className="container mx-auto px-4">
+        {/* Section header */}
+        <div className="text-center max-w-2xl mx-auto mb-16">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent mb-4">
+            <FileText size={16} />
+            <span className="text-sm font-medium">Políticas por País</span>
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            Normativas Laborales Locales
+          </h2>
+          <p className="text-muted-foreground text-lg">
+            Contoso adapta sus políticas a la legislación de cada país donde opera
+          </p>
+        </div>
+
+        {/* Country cards */}
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          {countries.map((country, index) => (
+            <div 
+              key={country.name}
+              className="bg-card rounded-3xl p-8 border border-border/50 hover:border-primary/20 shadow-card hover:shadow-card-hover transition-all duration-300 group animate-slide-up"
+              style={{ animationDelay: `${index * 150}ms` }}
+            >
+              {/* Header */}
+              <div className="flex items-center gap-4 mb-6">
+                <div className="text-5xl">{country.flag}</div>
+                <div>
+                  <h3 className="text-2xl font-bold text-foreground">{country.name}</h3>
+                  <div className="flex items-center gap-1 text-muted-foreground text-sm">
+                    <MapPin size={14} />
+                    <span>Sede Contoso</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Description */}
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                {country.description}
+              </p>
+
+              {/* Features */}
+              <ul className="space-y-3 mb-8">
+                {country.features.map((feature) => (
+                  <li key={feature} className="flex items-center gap-3 text-foreground">
+                    <div className="w-2 h-2 rounded-full bg-success" />
+                    {feature}
+                  </li>
+                ))}
+              </ul>
+
+              {/* CTA */}
+              <Button 
+                variant="outline" 
+                className="w-full group/btn border-border hover:border-primary hover:bg-primary/5"
+              >
+                Ver políticas completas
+                <ArrowRight size={16} className="ml-2 group-hover/btn:translate-x-1 transition-transform" />
+              </Button>
+            </div>
+          ))}
+        </div>
+
+        {/* Company info */}
+        <div className="mt-16 text-center">
+          <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-secondary border border-border">
+            <Building2 className="text-primary" size={20} />
+            <span className="text-muted-foreground">
+              <strong className="text-foreground">Contoso</strong> - Soluciones tecnológicas innovadoras
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};

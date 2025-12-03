@@ -1,13 +1,33 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Header } from "@/components/Header";
+import { Hero } from "@/components/Hero";
+import { ServicesSection } from "@/components/ServicesSection";
+import { FeaturesCarousel } from "@/components/FeaturesCarousel";
+import { PoliciesSection } from "@/components/PoliciesSection";
+import { CTASection } from "@/components/CTASection";
+import { Footer } from "@/components/Footer";
+import { Helmet } from "react-helmet-async";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <>
+      <Helmet>
+        <title>Portal RRHH Contoso | Gestión de Solicitudes Laborales</title>
+        <meta name="description" content="Portal de Recursos Humanos de Contoso. Gestiona vacaciones, reintegros, bonos y documentación laboral de forma rápida y segura." />
+        <link rel="icon" type="image/png" href="/contoso-logo.png" />
+      </Helmet>
+      
+      <div className="min-h-screen bg-background">
+        <Header />
+        <main>
+          <Hero />
+          <ServicesSection />
+          <FeaturesCarousel />
+          <PoliciesSection />
+          <CTASection />
+        </main>
+        <Footer />
       </div>
-    </div>
+    </>
   );
 };
 
