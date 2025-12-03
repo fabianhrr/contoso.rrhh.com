@@ -14,49 +14,49 @@ const services = [
   {
     icon: CalendarDays,
     title: "Solicitar Vacaciones",
-    description: "Gestiona tus días de descanso de forma rápida y sencilla según la normativa vigente.",
+    description: "Envía tu solicitud de días de descanso según la normativa de tu país.",
     color: "blue" as const,
   },
   {
     icon: Receipt,
     title: "Reintegros",
-    description: "Solicita el reembolso de gastos laborales aprobados de manera eficiente.",
+    description: "Solicita el reembolso de gastos laborales aprobados.",
     color: "green" as const,
   },
   {
     icon: Award,
-    title: "Bonos y Beneficios",
-    description: "Consulta y solicita tus bonos de desempeño y beneficios adicionales.",
+    title: "Bonos",
+    description: "Consulta información sobre bonos de desempeño y beneficios.",
     color: "orange" as const,
   },
   {
     icon: Scale,
-    title: "Leyes Laborales",
-    description: "Accede a información sobre la legislación laboral aplicable en tu país.",
+    title: "Consultas Legales",
+    description: "Información sobre la legislación laboral de Argentina y México.",
     color: "purple" as const,
   },
   {
     icon: Baby,
-    title: "Licencia de Paternidad",
-    description: "Solicita tu licencia por nacimiento de hijos según corresponda.",
+    title: "Licencias",
+    description: "Solicita licencias por paternidad, maternidad u otras.",
     color: "yellow" as const,
   },
   {
     icon: ShieldCheck,
-    title: "Seguro de Salud",
-    description: "Gestiona tu cobertura médica ampliada y obra social.",
+    title: "Seguro y Obra Social",
+    description: "Gestiona consultas sobre tu cobertura médica.",
     color: "red" as const,
   },
   {
     icon: Heart,
-    title: "Bienestar Laboral",
-    description: "Accede a programas de bienestar y capacitación continua.",
+    title: "Bienestar",
+    description: "Accede a programas de bienestar y capacitación.",
     color: "teal" as const,
   },
   {
     icon: FileText,
     title: "Documentación",
-    description: "Solicita certificados, constancias y documentos laborales.",
+    description: "Solicita certificados, constancias y recibos de sueldo.",
     color: "blue" as const,
   },
 ];
@@ -68,10 +68,10 @@ export const ServicesSection = () => {
         {/* Section header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Nuestros Servicios
+            ¿Qué necesitas gestionar?
           </h2>
           <p className="text-muted-foreground text-lg">
-            Selecciona el servicio que necesitas para comenzar tu solicitud
+            Selecciona el tipo de solicitud que deseas realizar
           </p>
         </div>
 

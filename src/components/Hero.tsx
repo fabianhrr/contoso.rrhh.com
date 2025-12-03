@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight, UserCheck } from "lucide-react";
 import heroIllustration from "@/assets/hero-illustration.png";
 
 export const Hero = () => {
@@ -35,8 +35,8 @@ export const Hero = () => {
           <div className="text-center lg:text-left">
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary mb-8 animate-fade-in">
-              <Sparkles size={16} />
-              <span className="text-sm font-medium">Portal de Autogestión RRHH</span>
+              <UserCheck size={16} />
+              <span className="text-sm font-medium">Portal Interno de Colaboradores</span>
             </div>
 
             {/* Main heading */}
@@ -47,8 +47,8 @@ export const Hero = () => {
 
             {/* Subtitle */}
             <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-xl animate-slide-up" style={{ animationDelay: '0.2s' }}>
-              Gestiona todas tus solicitudes laborales desde un solo lugar. 
-              Rápido, seguro y disponible 24/7 para colaboradores de Contoso.
+              Gestiona tus solicitudes laborales de forma rápida y sencilla. 
+              Vacaciones, reintegros, bonos y más desde un solo lugar.
             </p>
 
             {/* CTA Buttons */}
@@ -57,7 +57,7 @@ export const Hero = () => {
                 size="lg" 
                 className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-6 text-lg shadow-glow hover:shadow-card-hover transition-all duration-300 group"
               >
-                Explorar Servicios
+                Iniciar Solicitud
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
               </Button>
               <Button 
@@ -65,23 +65,23 @@ export const Hero = () => {
                 variant="outline"
                 className="border-2 border-border hover:border-primary hover:bg-primary/5 font-semibold px-8 py-6 text-lg transition-all duration-300"
               >
-                ¿Necesitas Ayuda?
+                Ver Mis Solicitudes
               </Button>
             </div>
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 mt-12 animate-slide-up" style={{ animationDelay: '0.4s' }}>
               <div className="text-center lg:text-left">
-                <div className="text-2xl md:text-3xl font-bold text-primary mb-1">+1500</div>
+                <div className="text-2xl md:text-3xl font-bold text-primary mb-1">169</div>
                 <div className="text-sm text-muted-foreground">Colaboradores</div>
               </div>
               <div className="text-center lg:text-left">
-                <div className="text-2xl md:text-3xl font-bold text-accent mb-1">24/7</div>
-                <div className="text-sm text-muted-foreground">Disponibilidad</div>
+                <div className="text-2xl md:text-3xl font-bold text-accent mb-1">2</div>
+                <div className="text-sm text-muted-foreground">Sedes</div>
               </div>
               <div className="text-center lg:text-left">
-                <div className="text-2xl md:text-3xl font-bold text-success mb-1">98%</div>
-                <div className="text-sm text-muted-foreground">Satisfacción</div>
+                <div className="text-2xl md:text-3xl font-bold text-success mb-1">24/7</div>
+                <div className="text-sm text-muted-foreground">Disponible</div>
               </div>
             </div>
           </div>

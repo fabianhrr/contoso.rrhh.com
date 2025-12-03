@@ -22,10 +22,10 @@ export const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             <a href="#servicios" className="text-muted-foreground hover:text-primary transition-colors font-medium">
-              Servicios
+              Solicitudes
             </a>
             <a href="#beneficios" className="text-muted-foreground hover:text-primary transition-colors font-medium">
-              Beneficios
+              Información
             </a>
             <a href="#politicas" className="text-muted-foreground hover:text-primary transition-colors font-medium">
               Políticas
@@ -56,10 +56,10 @@ export const Header = () => {
           <div className="md:hidden py-4 border-t border-border">
             <nav className="flex flex-col gap-4">
               <a href="#servicios" className="text-muted-foreground hover:text-primary transition-colors font-medium py-2">
-                Servicios
+                Solicitudes
               </a>
               <a href="#beneficios" className="text-muted-foreground hover:text-primary transition-colors font-medium py-2">
-                Beneficios
+                Información
               </a>
               <a href="#politicas" className="text-muted-foreground hover:text-primary transition-colors font-medium py-2">
                 Políticas
