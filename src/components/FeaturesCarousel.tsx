@@ -1,44 +1,44 @@
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 import { useCallback, useEffect, useState } from 'react';
-import { ChevronLeft, ChevronRight, Globe, Clock, Lock, Zap, Users, HeadphonesIcon } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Globe, Clock, Lock, Zap, CheckCircle, HeadphonesIcon } from 'lucide-react';
 import { Button } from './ui/button';
 
 const features = [
   {
     icon: Globe,
-    title: "Acceso Global",
-    description: "Disponible para colaboradores en México y Argentina con políticas adaptadas a cada país.",
+    title: "Argentina y México",
+    description: "Portal unificado para colaboradores de ambas sedes con políticas adaptadas a cada país.",
     gradient: "from-primary to-primary/60",
   },
   {
     icon: Clock,
-    title: "Disponibilidad 24/7",
-    description: "Realiza tus solicitudes en cualquier momento, sin importar el día o la hora.",
+    title: "Disponible 24/7",
+    description: "Envía tus solicitudes en cualquier momento, incluso fuera del horario laboral.",
     gradient: "from-accent to-accent/60",
   },
   {
     icon: Lock,
-    title: "Seguridad Total",
-    description: "Tus datos están protegidos con los más altos estándares de seguridad empresarial.",
+    title: "Información Segura",
+    description: "Tus datos personales y solicitudes están protegidos con altos estándares de seguridad.",
     gradient: "from-success to-success/60",
   },
   {
     icon: Zap,
-    title: "Respuesta Rápida",
-    description: "Procesamiento ágil de solicitudes con notificaciones en tiempo real.",
+    title: "Proceso Ágil",
+    description: "Recibe notificaciones sobre el estado de tus solicitudes en tiempo real.",
     gradient: "from-warning to-warning/60",
   },
   {
-    icon: Users,
-    title: "Autogestión",
-    description: "Gestiona tus solicitudes de forma independiente sin intermediarios.",
+    icon: CheckCircle,
+    title: "Seguimiento Fácil",
+    description: "Consulta el historial y estado de todas tus solicitudes desde un solo lugar.",
     gradient: "from-icon-purple to-icon-purple/60",
   },
   {
     icon: HeadphonesIcon,
-    title: "Soporte Dedicado",
-    description: "Equipo de RRHH disponible para resolver cualquier consulta.",
+    title: "Soporte de RRHH",
+    description: "El equipo de Recursos Humanos está disponible para resolver tus dudas.",
     gradient: "from-icon-teal to-icon-teal/60",
   },
 ];
@@ -81,10 +81,10 @@ export const FeaturesCarousel = () => {
         {/* Section header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            ¿Por qué elegir nuestro portal?
+            Ventajas del Portal
           </h2>
           <p className="text-muted-foreground text-lg">
-            Descubre las ventajas de gestionar tus solicitudes de RRHH con Contoso
+            Simplifica la gestión de tus trámites laborales
           </p>
         </div>
 

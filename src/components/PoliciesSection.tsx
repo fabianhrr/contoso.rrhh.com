@@ -1,17 +1,17 @@
-import { Building2, MapPin, FileText, ArrowRight } from "lucide-react";
+import { MapPin, FileText, ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
 
 const countries = [
   {
     name: "Argentina",
     flag: "🇦🇷",
-    description: "Políticas laborales según LCT. Vacaciones de 14 a 35 días según antigüedad.",
-    features: ["SAC en dos cuotas", "Obra social + ART", "Teletrabajo disponible"],
+    description: "Régimen según Ley de Contrato de Trabajo (LCT). Vacaciones de 14 a 35 días según antigüedad.",
+    features: ["SAC en dos cuotas anuales", "Obra social + ART", "Teletrabajo según política interna"],
   },
   {
     name: "México",
     flag: "🇲🇽",
-    description: "Políticas según Ley Federal del Trabajo. Mínimo 12 días de vacaciones.",
+    description: "Régimen según Ley Federal del Trabajo (LFT). Mínimo 12 días de vacaciones al año.",
     features: ["Aguinaldo conforme LFT", "IMSS + seguro médico", "Vales de despensa"],
   },
 ];
@@ -24,13 +24,13 @@ export const PoliciesSection = () => {
         <div className="text-center max-w-2xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent mb-4">
             <FileText size={16} />
-            <span className="text-sm font-medium">Políticas por País</span>
+            <span className="text-sm font-medium">Información por Sede</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Normativas Laborales Locales
+            Políticas según tu ubicación
           </h2>
           <p className="text-muted-foreground text-lg">
-            Contoso adapta sus políticas a la legislación de cada país donde opera
+            Las políticas laborales varían según la sede donde trabajes
           </p>
         </div>
 
@@ -79,16 +79,6 @@ export const PoliciesSection = () => {
               </Button>
             </div>
           ))}
-        </div>
-
-        {/* Company info */}
-        <div className="mt-16 text-center">
-          <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-secondary border border-border">
-            <Building2 className="text-primary" size={20} />
-            <span className="text-muted-foreground">
-              <strong className="text-foreground">Contoso</strong> - Soluciones tecnológicas innovadoras
-            </span>
-          </div>
         </div>
       </div>
     </section>

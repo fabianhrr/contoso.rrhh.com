@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -15,47 +15,39 @@ export const Footer = () => {
               />
               <span className="text-lg font-bold">RRHH</span>
             </div>
-            <p className="text-primary-foreground/70 leading-relaxed mb-6">
-              Proveer soluciones tecnológicas innovadoras y confiables que impulsen el crecimiento y la transformación digital.
+            <p className="text-primary-foreground/70 leading-relaxed mb-4">
+              Portal interno de autogestión para colaboradores de Contoso en Argentina y México.
             </p>
-            <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary transition-colors">
-                <Linkedin size={18} />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary transition-colors">
-                <Twitter size={18} />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary transition-colors">
-                <Facebook size={18} />
-              </a>
-            </div>
+            <p className="text-primary-foreground/50 text-sm">
+              169 colaboradores en 2 sedes
+            </p>
           </div>
 
           {/* Quick links */}
           <div>
-            <h3 className="text-lg font-semibold mb-6">Servicios</h3>
+            <h3 className="text-lg font-semibold mb-6">Solicitudes</h3>
             <ul className="space-y-3">
-              <li><a href="#" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">Solicitar Vacaciones</a></li>
+              <li><a href="#" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">Vacaciones</a></li>
               <li><a href="#" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">Reintegros</a></li>
-              <li><a href="#" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">Bonos y Beneficios</a></li>
+              <li><a href="#" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">Bonos</a></li>
               <li><a href="#" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">Documentación</a></li>
             </ul>
           </div>
 
-          {/* Legal */}
+          {/* Resources */}
           <div>
-            <h3 className="text-lg font-semibold mb-6">Legal</h3>
+            <h3 className="text-lg font-semibold mb-6">Recursos</h3>
             <ul className="space-y-3">
-              <li><a href="#" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">Política de Privacidad</a></li>
-              <li><a href="#" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">Términos de Uso</a></li>
-              <li><a href="#" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">Aviso Legal</a></li>
-              <li><a href="#" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">Cookies</a></li>
+              <li><a href="#" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">Políticas Argentina</a></li>
+              <li><a href="#" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">Políticas México</a></li>
+              <li><a href="#" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">Preguntas Frecuentes</a></li>
+              <li><a href="#" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">Manual del Colaborador</a></li>
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h3 className="text-lg font-semibold mb-6">Contacto</h3>
+            <h3 className="text-lg font-semibold mb-6">Contacto RRHH</h3>
             <ul className="space-y-4">
               <li className="flex items-center gap-3">
                 <Mail size={18} className="text-primary" />
@@ -65,12 +57,12 @@ export const Footer = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={18} className="text-primary" />
-                <span className="text-primary-foreground/70">+1 (555) 123-4567</span>
+                <span className="text-primary-foreground/70">Interno 100</span>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="text-primary mt-0.5" />
                 <span className="text-primary-foreground/70">
-                  Oficinas en Argentina y México
+                  Argentina | México
                 </span>
               </li>
             </ul>
@@ -81,17 +73,14 @@ export const Footer = () => {
         <div className="pt-8 border-t border-primary-foreground/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-primary-foreground/50 text-sm">
-              © 2025 contoso.rrhh.com - Todos los derechos reservados
+              © 2025 contoso.rrhh.com - Portal interno de colaboradores
             </p>
             <div className="flex gap-6">
               <a href="#" className="text-primary-foreground/50 hover:text-primary-foreground text-sm transition-colors">
                 Política de Privacidad
               </a>
               <a href="#" className="text-primary-foreground/50 hover:text-primary-foreground text-sm transition-colors">
-                Términos de Uso
-              </a>
-              <a href="#" className="text-primary-foreground/50 hover:text-primary-foreground text-sm transition-colors">
-                Contacto
+                Soporte
               </a>
             </div>
           </div>
